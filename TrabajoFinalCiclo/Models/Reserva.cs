@@ -6,30 +6,45 @@ using System.Threading.Tasks;
 
 namespace TrabajoFinalCiclo.Models
 {
-    class Reserva
-    {
-        public int Id { get; set; }
-        public int SalaId { get; set; }
-        public int UsuarioId { get; set; }
-        public DateTime FechaInicio { get; set; }
-        public int DuracionHoras { get; set; }
-        public List<string> Asistentes { get; set; }
-        public Dictionary<int, int> CombosPorPersona { get; set; }
-
-        public decimal CalcularCosto()
+        public class Reserva
         {
-            decimal total = 0;
-            foreach (var combo in CombosPorPersona)
+            public int Id { get; set; }
+            public int SalaId { get; set; }
+            public int UsuarioId { get; set; }
+            public DateTime FechaInicio { get; set; }
+            public int DuracionHoras { get; set; }
+            public List<string> Asistentes { get; set; }
+            public Dictionary<int, int> CombosPorPersona { get; set; }
+
+            public decimal CalcularCosto()
             {
-                decimal precio = combo.Key switch
+                decimal total = 0;
+
+                foreach (var combo in CombosPorPersona)
                 {
-                    1 => 10,
-                    2 => 20,
-                    3 => 25,
-                    _ => 0
-                };
-                total += precio * combo.Value * DuracionHoras;
+                    decimal precio = 0;
+
+                    switch (combo.Key)
+                    {
+                        case 1:
+                            precio = 10;
+                            break;
+                        case 2:
+                            precio = 20;
+                            break;
+                        case 3:
+                            precio = 25;
+                            break;
+                        default:
+                            precio = 0;
+                            break;
+                    }
+
+                    total += precio * combo.Value * DuracionHoras;
+                }
+
+                return total;
             }
-            return total;
         }
+
 }
