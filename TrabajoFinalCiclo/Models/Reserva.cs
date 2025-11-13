@@ -26,10 +26,12 @@ namespace TrabajoFinalCiclo.Models
                     1 => 10,
                     2 => 20,
                     3 => 25,
-                    _ => 0
+                    _ => 0,
                 };
                 total += precio * combo.Value * DuracionHoras;
             }
             return total;
-        }
+        }  
+        
+    }  
 }
