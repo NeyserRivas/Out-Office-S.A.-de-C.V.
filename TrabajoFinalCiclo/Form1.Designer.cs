@@ -35,8 +35,8 @@
             this.reportesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelBienvenida = new System.Windows.Forms.Panel();
-            this.lblBienvenida = new System.Windows.Forms.Label();
             this.lblFechaHora = new System.Windows.Forms.Label();
+            this.lblBienvenida = new System.Windows.Forms.Label();
             this.btnNuevaReserva = new System.Windows.Forms.Button();
             this.btnVerSalas = new System.Windows.Forms.Button();
             this.btnGestionUsuarios = new System.Windows.Forms.Button();
@@ -76,7 +76,6 @@
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
             this.reportesToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
             this.reportesToolStripMenuItem.Text = "Reservas";
-            this.reportesToolStripMenuItem.Click += new System.EventHandler(this.reportesToolStripMenuItem_Click);
             // 
             // reportesToolStripMenuItem1
             // 
@@ -99,17 +98,6 @@
             this.panelBienvenida.Size = new System.Drawing.Size(389, 130);
             this.panelBienvenida.TabIndex = 1;
             // 
-            // lblBienvenida
-            // 
-            this.lblBienvenida.AutoSize = true;
-            this.lblBienvenida.Font = new System.Drawing.Font("Cambria", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBienvenida.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.lblBienvenida.Location = new System.Drawing.Point(31, 16);
-            this.lblBienvenida.Name = "lblBienvenida";
-            this.lblBienvenida.Size = new System.Drawing.Size(152, 32);
-            this.lblBienvenida.TabIndex = 0;
-            this.lblBienvenida.Text = "Bienvenido";
-            // 
             // lblFechaHora
             // 
             this.lblFechaHora.AutoSize = true;
@@ -120,6 +108,17 @@
             this.lblFechaHora.Size = new System.Drawing.Size(70, 25);
             this.lblFechaHora.TabIndex = 1;
             this.lblFechaHora.Text = "label2";
+            // 
+            // lblBienvenida
+            // 
+            this.lblBienvenida.AutoSize = true;
+            this.lblBienvenida.Font = new System.Drawing.Font("Cambria", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBienvenida.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lblBienvenida.Location = new System.Drawing.Point(31, 16);
+            this.lblBienvenida.Name = "lblBienvenida";
+            this.lblBienvenida.Size = new System.Drawing.Size(152, 32);
+            this.lblBienvenida.TabIndex = 0;
+            this.lblBienvenida.Text = "Bienvenido";
             // 
             // btnNuevaReserva
             // 
