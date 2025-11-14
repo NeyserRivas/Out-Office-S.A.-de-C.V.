@@ -10,11 +10,13 @@ using System.Windows.Forms;
 
 namespace TrabajoFinalCiclo
 {
-    public partial class Form2 : Form
+    public partial class frmGestionUsuarios : Form
     {
-        public Form2()
+        public frmGestionUsuarios()
         {
             InitializeComponent();
         }
+
+       
     }
 }

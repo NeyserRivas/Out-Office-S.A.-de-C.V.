@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace TrabajoFinalCiclo
 {
-    public partial class frmLogin : Form
+    public partial class frmReportes : Form
     {
-        public frmLogin()
+        public frmReportes()
         {
             InitializeComponent();
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
