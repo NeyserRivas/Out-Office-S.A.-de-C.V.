@@ -64,6 +64,40 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+
+    <!-- Formularios agregados manualmente -->
+    <Compile Include="frmConsultaReservas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaReservas.Designer.cs">
+      <DependentUpon>frmConsultaReservas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDisponibilidadSalas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDisponibilidadSalas.Designer.cs">
+      <DependentUpon>frmDisponibilidadSalas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGestionSalas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGestionSalas.Designer.cs">
+      <DependentUpon>frmGestionSalas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNuevaReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNuevaReserva.Designer.cs">
+      <DependentUpon>frmNuevaReserva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportes.Designer.cs">
+      <DependentUpon>frmReportes.cs</DependentUpon>
+    </Compile>
+
+    <!-- Otros archivos -->
     <Compile Include="Models\Administrador.cs" />
     <Compile Include="Models\Cliente.cs" />
     <Compile Include="Models\Reserva.cs" />
@@ -80,6 +114,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaReservas.resx">
+      <DependentUpon>frmConsultaReservas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDisponibilidadSalas.resx">
+      <DependentUpon>frmDisponibilidadSalas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGestionSalas.resx">
+      <DependentUpon>frmGestionSalas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevaReserva.resx">
+      <DependentUpon>frmNuevaReserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportes.resx">
+      <DependentUpon>frmReportes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
