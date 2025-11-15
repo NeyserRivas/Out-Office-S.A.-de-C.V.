@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\Asistente.cs" />
+    <Compile Include="Clases\ConexionBD.cs" />
+    <Compile Include="Clases\DAO\AsistenteDAO.cs" />
+    <Compile Include="Clases\DAO\BaseDAO.cs" />
+    <Compile Include="Clases\DAO\ReservaDAO.cs" />
+    <Compile Include="Clases\DAO\SalaDAO.cs" />
+    <Compile Include="Clases\DAO\UsuarioDAO.cs" />
+    <Compile Include="Clases\ItemCalculable.cs" />
+    <Compile Include="Clases\Persona.cs" />
+    <Compile Include="Clases\Reserva.cs" />
+    <Compile Include="Clases\Sala.cs" />
+    <Compile Include="Clases\Usuario.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,8 +156,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Clases\DAO\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
