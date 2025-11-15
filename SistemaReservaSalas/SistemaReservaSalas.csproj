@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <!-- Clases -->
     <Compile Include="Clases\Asistente.cs" />
     <Compile Include="Clases\ConexionBD.cs" />
     <Compile Include="Clases\DAO\AsistenteDAO.cs" />
@@ -58,80 +59,86 @@
     <Compile Include="Clases\Reserva.cs" />
     <Compile Include="Clases\Sala.cs" />
     <Compile Include="Clases\Usuario.cs" />
-    <Compile Include="Form1.cs">
+
+    <!-- Form1 correcto en carpeta Formularios -->
+    <Compile Include="Formularios\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="Formularios\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmGestionUsuarios.cs">
+
+    <!-- Otros formularios -->
+    <Compile Include="Formularios\frmGestionUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmGestionUsuarios.Designer.cs">
+    <Compile Include="Formularios\frmGestionUsuarios.Designer.cs">
       <DependentUpon>frmGestionUsuarios.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmLogin.cs">
+    <Compile Include="Formularios\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmLogin.Designer.cs">
+    <Compile Include="Formularios\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <!-- Formularios agregados manualmente -->
-    <Compile Include="frmConsultaReservas.cs">
+    <Compile Include="Formularios\frmConsultaReservas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmConsultaReservas.Designer.cs">
+    <Compile Include="Formularios\frmConsultaReservas.Designer.cs">
       <DependentUpon>frmConsultaReservas.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmDisponibilidadSalas.cs">
+    <Compile Include="Formularios\frmDisponibilidadSalas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmDisponibilidadSalas.Designer.cs">
+    <Compile Include="Formularios\frmDisponibilidadSalas.Designer.cs">
       <DependentUpon>frmDisponibilidadSalas.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmGestionSalas.cs">
+    <Compile Include="Formularios\frmGestionSalas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmGestionSalas.Designer.cs">
+    <Compile Include="Formularios\frmGestionSalas.Designer.cs">
       <DependentUpon>frmGestionSalas.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmNuevaReserva.cs">
+    <Compile Include="Formularios\frmNuevaReserva.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmNuevaReserva.Designer.cs">
+    <Compile Include="Formularios\frmNuevaReserva.Designer.cs">
       <DependentUpon>frmNuevaReserva.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmReportes.cs">
+    <Compile Include="Formularios\frmReportes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmReportes.Designer.cs">
+    <Compile Include="Formularios\frmReportes.Designer.cs">
       <DependentUpon>frmReportes.cs</DependentUpon>
     </Compile>
+
     <!-- Otros archivos -->
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
+
+    <!-- Recursos -->
+    <EmbeddedResource Include="Formularios\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmGestionUsuarios.resx">
+    <EmbeddedResource Include="Formularios\frmGestionUsuarios.resx">
       <DependentUpon>frmGestionUsuarios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmLogin.resx">
+    <EmbeddedResource Include="Formularios\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmConsultaReservas.resx">
+    <EmbeddedResource Include="Formularios\frmConsultaReservas.resx">
       <DependentUpon>frmConsultaReservas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmDisponibilidadSalas.resx">
+    <EmbeddedResource Include="Formularios\frmDisponibilidadSalas.resx">
       <DependentUpon>frmDisponibilidadSalas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmGestionSalas.resx">
+    <EmbeddedResource Include="Formularios\frmGestionSalas.resx">
       <DependentUpon>frmGestionSalas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmNuevaReserva.resx">
+    <EmbeddedResource Include="Formularios\frmNuevaReserva.resx">
       <DependentUpon>frmNuevaReserva.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmReportes.resx">
+    <EmbeddedResource Include="Formularios\frmReportes.resx">
       <DependentUpon>frmReportes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
