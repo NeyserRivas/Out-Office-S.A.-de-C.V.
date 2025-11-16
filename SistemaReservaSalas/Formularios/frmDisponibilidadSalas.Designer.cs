@@ -35,23 +35,31 @@ namespace SistemaReservaSalas
             this.btnActualizar = new System.Windows.Forms.Button();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.lblInfoSala = new System.Windows.Forms.Label();
-            this.lblFechaSeleccionada = new System.Windows.Forms.Label();
             this.dgvHorarios = new System.Windows.Forms.DataGridView();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.lblFechaSeleccionada = new System.Windows.Forms.Label();
+            this.lblInfoSala = new System.Windows.Forms.Label();
             this.btnNuevaReserva = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHorarios)).BeginInit();
+            this.groupBox3.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label1.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(-2, 0);
+            this.label1.Location = new System.Drawing.Point(-2, 49);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(729, 42);
             this.label1.TabIndex = 0;
@@ -62,7 +70,7 @@ namespace SistemaReservaSalas
             // 
             this.groupBox1.Controls.Add(this.cmbSalaCalendario);
             this.groupBox1.Controls.Add(this.btnActualizar);
-            this.groupBox1.Location = new System.Drawing.Point(182, 56);
+            this.groupBox1.Location = new System.Drawing.Point(182, 94);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(329, 78);
             this.groupBox1.TabIndex = 1;
@@ -88,7 +96,7 @@ namespace SistemaReservaSalas
             // 
             // monthCalendar1
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(40, 157);
+            this.monthCalendar1.Location = new System.Drawing.Point(40, 178);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 2;
             // 
@@ -96,11 +104,19 @@ namespace SistemaReservaSalas
             // 
             this.groupBox2.Controls.Add(this.dgvHorarios);
             this.groupBox2.Controls.Add(this.groupBox3);
-            this.groupBox2.Location = new System.Drawing.Point(342, 157);
+            this.groupBox2.Location = new System.Drawing.Point(345, 178);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(354, 278);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
+            // 
+            // dgvHorarios
+            // 
+            this.dgvHorarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvHorarios.Location = new System.Drawing.Point(18, 104);
+            this.dgvHorarios.Name = "dgvHorarios";
+            this.dgvHorarios.Size = new System.Drawing.Size(320, 150);
+            this.dgvHorarios.TabIndex = 1;
             // 
             // groupBox3
             // 
@@ -113,15 +129,6 @@ namespace SistemaReservaSalas
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Mostrando disponibilidad para:";
             // 
-            // lblInfoSala
-            // 
-            this.lblInfoSala.AutoSize = true;
-            this.lblInfoSala.Location = new System.Drawing.Point(32, 18);
-            this.lblInfoSala.Name = "lblInfoSala";
-            this.lblInfoSala.Size = new System.Drawing.Size(31, 14);
-            this.lblInfoSala.TabIndex = 0;
-            this.lblInfoSala.Text = "Sala:";
-            // 
             // lblFechaSeleccionada
             // 
             this.lblFechaSeleccionada.AutoSize = true;
@@ -131,13 +138,14 @@ namespace SistemaReservaSalas
             this.lblFechaSeleccionada.TabIndex = 1;
             this.lblFechaSeleccionada.Text = "Fecha:";
             // 
-            // dgvHorarios
+            // lblInfoSala
             // 
-            this.dgvHorarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvHorarios.Location = new System.Drawing.Point(18, 104);
-            this.dgvHorarios.Name = "dgvHorarios";
-            this.dgvHorarios.Size = new System.Drawing.Size(320, 150);
-            this.dgvHorarios.TabIndex = 1;
+            this.lblInfoSala.AutoSize = true;
+            this.lblInfoSala.Location = new System.Drawing.Point(32, 18);
+            this.lblInfoSala.Name = "lblInfoSala";
+            this.lblInfoSala.Size = new System.Drawing.Size(31, 14);
+            this.lblInfoSala.TabIndex = 0;
+            this.lblInfoSala.Text = "Sala:";
             // 
             // btnNuevaReserva
             // 
@@ -157,11 +165,64 @@ namespace SistemaReservaSalas
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = true;
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.usuariosToolStripMenuItem,
+            this.salasToolStripMenuItem,
+            this.reportesToolStripMenuItem,
+            this.reportesToolStripMenuItem1,
+            this.ayudaToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(727, 24);
+            this.menuStrip1.TabIndex = 18;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // usuariosToolStripMenuItem
+            // 
+            this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
+            this.usuariosToolStripMenuItem.Text = "Usuarios";
+            // 
+            // salasToolStripMenuItem
+            // 
+            this.salasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1});
+            this.salasToolStripMenuItem.Name = "salasToolStripMenuItem";
+            this.salasToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
+            this.salasToolStripMenuItem.Text = "Salas";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem1.Text = "toolStripMenuItem1";
+            // 
+            // reportesToolStripMenuItem
+            // 
+            this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
+            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
+            this.reportesToolStripMenuItem.Text = "Reservas";
+            // 
+            // reportesToolStripMenuItem1
+            // 
+            this.reportesToolStripMenuItem1.Name = "reportesToolStripMenuItem1";
+            this.reportesToolStripMenuItem1.Size = new System.Drawing.Size(65, 20);
+            this.reportesToolStripMenuItem1.Text = "Reportes";
+            // 
+            // ayudaToolStripMenuItem
+            // 
+            this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.ayudaToolStripMenuItem.Text = "Ayuda";
+            // 
             // frmDisponibilidadSalas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(727, 567);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnNuevaReserva);
             this.Controls.Add(this.groupBox2);
@@ -173,10 +234,13 @@ namespace SistemaReservaSalas
             this.Text = "Disponibilidad de Salas";
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHorarios)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvHorarios)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -194,5 +258,12 @@ namespace SistemaReservaSalas
         private System.Windows.Forms.Label lblInfoSala;
         private System.Windows.Forms.Button btnNuevaReserva;
         private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
     }
 }

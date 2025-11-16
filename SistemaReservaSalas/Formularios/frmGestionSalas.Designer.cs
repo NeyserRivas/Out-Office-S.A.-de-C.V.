@@ -36,6 +36,15 @@ namespace SistemaReservaSalas
             this.dgvSalas = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.chkDisponible = new System.Windows.Forms.CheckBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtOtroEquipo = new System.Windows.Forms.TextBox();
+            this.chkOtro = new System.Windows.Forms.CheckBox();
+            this.chkCafetera = new System.Windows.Forms.CheckBox();
+            this.chkAireAcondicionado = new System.Windows.Forms.CheckBox();
+            this.chkOasis = new System.Windows.Forms.CheckBox();
+            this.chkPizarra = new System.Windows.Forms.CheckBox();
+            this.chkProyector = new System.Windows.Forms.CheckBox();
             this.label7 = new System.Windows.Forms.Label();
             this.rtbDistribucion = new System.Windows.Forms.RichTextBox();
             this.numCapacidad = new System.Windows.Forms.NumericUpDown();
@@ -46,31 +55,30 @@ namespace SistemaReservaSalas
             this.l = new System.Windows.Forms.Label();
             this.txtIdSala = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.chkProyector = new System.Windows.Forms.CheckBox();
-            this.chkPizarra = new System.Windows.Forms.CheckBox();
-            this.chkOasis = new System.Windows.Forms.CheckBox();
-            this.chkAireAcondicionado = new System.Windows.Forms.CheckBox();
-            this.chkCafetera = new System.Windows.Forms.CheckBox();
-            this.chkOtro = new System.Windows.Forms.CheckBox();
-            this.chkDisponible = new System.Windows.Forms.CheckBox();
-            this.txtOtroEquipo = new System.Windows.Forms.TextBox();
             this.btnNuevaSala = new System.Windows.Forms.Button();
             this.btnGuardarSala = new System.Windows.Forms.Button();
             this.btnVerCalendario = new System.Windows.Forms.Button();
             this.btnEliminarSala = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSalas)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numCapacidad)).BeginInit();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numCapacidad)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label1.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(1, 0);
+            this.label1.Location = new System.Drawing.Point(2, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(881, 32);
             this.label1.TabIndex = 0;
@@ -81,7 +89,7 @@ namespace SistemaReservaSalas
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(256, 56);
+            this.label2.Location = new System.Drawing.Point(256, 89);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 14);
             this.label2.TabIndex = 1;
@@ -89,14 +97,14 @@ namespace SistemaReservaSalas
             // 
             // txtBuscarSala
             // 
-            this.txtBuscarSala.Location = new System.Drawing.Point(331, 50);
+            this.txtBuscarSala.Location = new System.Drawing.Point(331, 83);
             this.txtBuscarSala.Name = "txtBuscarSala";
             this.txtBuscarSala.Size = new System.Drawing.Size(194, 20);
             this.txtBuscarSala.TabIndex = 2;
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(547, 47);
+            this.btnBuscar.Location = new System.Drawing.Point(547, 80);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(75, 23);
             this.btnBuscar.TabIndex = 3;
@@ -106,7 +114,7 @@ namespace SistemaReservaSalas
             // dgvSalas
             // 
             this.dgvSalas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvSalas.Location = new System.Drawing.Point(128, 108);
+            this.dgvSalas.Location = new System.Drawing.Point(124, 140);
             this.dgvSalas.Name = "dgvSalas";
             this.dgvSalas.Size = new System.Drawing.Size(627, 150);
             this.dgvSalas.TabIndex = 4;
@@ -115,7 +123,7 @@ namespace SistemaReservaSalas
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(205, 89);
+            this.label3.Location = new System.Drawing.Point(204, 112);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(84, 15);
             this.label3.TabIndex = 5;
@@ -140,6 +148,100 @@ namespace SistemaReservaSalas
             this.groupBox1.Size = new System.Drawing.Size(823, 274);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
+            // 
+            // chkDisponible
+            // 
+            this.chkDisponible.AutoSize = true;
+            this.chkDisponible.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkDisponible.Location = new System.Drawing.Point(314, 230);
+            this.chkDisponible.Name = "chkDisponible";
+            this.chkDisponible.Size = new System.Drawing.Size(215, 21);
+            this.chkDisponible.TabIndex = 11;
+            this.chkDisponible.Text = "Sala Disponible para Reservas ";
+            this.chkDisponible.UseVisualStyleBackColor = true;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.txtOtroEquipo);
+            this.groupBox2.Controls.Add(this.chkOtro);
+            this.groupBox2.Controls.Add(this.chkCafetera);
+            this.groupBox2.Controls.Add(this.chkAireAcondicionado);
+            this.groupBox2.Controls.Add(this.chkOasis);
+            this.groupBox2.Controls.Add(this.chkPizarra);
+            this.groupBox2.Controls.Add(this.chkProyector);
+            this.groupBox2.Location = new System.Drawing.Point(436, 29);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(329, 173);
+            this.groupBox2.TabIndex = 10;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Equipamiento Disponible";
+            // 
+            // txtOtroEquipo
+            // 
+            this.txtOtroEquipo.Location = new System.Drawing.Point(213, 91);
+            this.txtOtroEquipo.Name = "txtOtroEquipo";
+            this.txtOtroEquipo.Size = new System.Drawing.Size(100, 20);
+            this.txtOtroEquipo.TabIndex = 17;
+            // 
+            // chkOtro
+            // 
+            this.chkOtro.AutoSize = true;
+            this.chkOtro.Location = new System.Drawing.Point(161, 95);
+            this.chkOtro.Name = "chkOtro";
+            this.chkOtro.Size = new System.Drawing.Size(46, 16);
+            this.chkOtro.TabIndex = 16;
+            this.chkOtro.Text = "Otro";
+            this.chkOtro.UseVisualStyleBackColor = true;
+            // 
+            // chkCafetera
+            // 
+            this.chkCafetera.AutoSize = true;
+            this.chkCafetera.Location = new System.Drawing.Point(161, 65);
+            this.chkCafetera.Name = "chkCafetera";
+            this.chkCafetera.Size = new System.Drawing.Size(62, 16);
+            this.chkCafetera.TabIndex = 15;
+            this.chkCafetera.Text = "Cafétera";
+            this.chkCafetera.UseVisualStyleBackColor = true;
+            // 
+            // chkAireAcondicionado
+            // 
+            this.chkAireAcondicionado.AutoSize = true;
+            this.chkAireAcondicionado.Location = new System.Drawing.Point(161, 30);
+            this.chkAireAcondicionado.Name = "chkAireAcondicionado";
+            this.chkAireAcondicionado.Size = new System.Drawing.Size(116, 16);
+            this.chkAireAcondicionado.TabIndex = 14;
+            this.chkAireAcondicionado.Text = "Aire Acondicionado";
+            this.chkAireAcondicionado.UseVisualStyleBackColor = true;
+            // 
+            // chkOasis
+            // 
+            this.chkOasis.AutoSize = true;
+            this.chkOasis.Location = new System.Drawing.Point(19, 95);
+            this.chkOasis.Name = "chkOasis";
+            this.chkOasis.Size = new System.Drawing.Size(49, 16);
+            this.chkOasis.TabIndex = 13;
+            this.chkOasis.Text = "Oasis";
+            this.chkOasis.UseVisualStyleBackColor = true;
+            // 
+            // chkPizarra
+            // 
+            this.chkPizarra.AutoSize = true;
+            this.chkPizarra.Location = new System.Drawing.Point(19, 65);
+            this.chkPizarra.Name = "chkPizarra";
+            this.chkPizarra.Size = new System.Drawing.Size(58, 16);
+            this.chkPizarra.TabIndex = 12;
+            this.chkPizarra.Text = "Pizarra";
+            this.chkPizarra.UseVisualStyleBackColor = true;
+            // 
+            // chkProyector
+            // 
+            this.chkProyector.AutoSize = true;
+            this.chkProyector.Location = new System.Drawing.Point(19, 33);
+            this.chkProyector.Name = "chkProyector";
+            this.chkProyector.Size = new System.Drawing.Size(72, 16);
+            this.chkProyector.TabIndex = 11;
+            this.chkProyector.Text = "Proyector";
+            this.chkProyector.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
@@ -222,100 +324,6 @@ namespace SistemaReservaSalas
             this.label4.TabIndex = 0;
             this.label4.Text = "ID:";
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.txtOtroEquipo);
-            this.groupBox2.Controls.Add(this.chkOtro);
-            this.groupBox2.Controls.Add(this.chkCafetera);
-            this.groupBox2.Controls.Add(this.chkAireAcondicionado);
-            this.groupBox2.Controls.Add(this.chkOasis);
-            this.groupBox2.Controls.Add(this.chkPizarra);
-            this.groupBox2.Controls.Add(this.chkProyector);
-            this.groupBox2.Location = new System.Drawing.Point(436, 29);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(329, 173);
-            this.groupBox2.TabIndex = 10;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Equipamiento Disponible";
-            // 
-            // chkProyector
-            // 
-            this.chkProyector.AutoSize = true;
-            this.chkProyector.Location = new System.Drawing.Point(19, 33);
-            this.chkProyector.Name = "chkProyector";
-            this.chkProyector.Size = new System.Drawing.Size(72, 16);
-            this.chkProyector.TabIndex = 11;
-            this.chkProyector.Text = "Proyector";
-            this.chkProyector.UseVisualStyleBackColor = true;
-            // 
-            // chkPizarra
-            // 
-            this.chkPizarra.AutoSize = true;
-            this.chkPizarra.Location = new System.Drawing.Point(19, 65);
-            this.chkPizarra.Name = "chkPizarra";
-            this.chkPizarra.Size = new System.Drawing.Size(58, 16);
-            this.chkPizarra.TabIndex = 12;
-            this.chkPizarra.Text = "Pizarra";
-            this.chkPizarra.UseVisualStyleBackColor = true;
-            // 
-            // chkOasis
-            // 
-            this.chkOasis.AutoSize = true;
-            this.chkOasis.Location = new System.Drawing.Point(19, 95);
-            this.chkOasis.Name = "chkOasis";
-            this.chkOasis.Size = new System.Drawing.Size(49, 16);
-            this.chkOasis.TabIndex = 13;
-            this.chkOasis.Text = "Oasis";
-            this.chkOasis.UseVisualStyleBackColor = true;
-            // 
-            // chkAireAcondicionado
-            // 
-            this.chkAireAcondicionado.AutoSize = true;
-            this.chkAireAcondicionado.Location = new System.Drawing.Point(161, 30);
-            this.chkAireAcondicionado.Name = "chkAireAcondicionado";
-            this.chkAireAcondicionado.Size = new System.Drawing.Size(116, 16);
-            this.chkAireAcondicionado.TabIndex = 14;
-            this.chkAireAcondicionado.Text = "Aire Acondicionado";
-            this.chkAireAcondicionado.UseVisualStyleBackColor = true;
-            // 
-            // chkCafetera
-            // 
-            this.chkCafetera.AutoSize = true;
-            this.chkCafetera.Location = new System.Drawing.Point(161, 65);
-            this.chkCafetera.Name = "chkCafetera";
-            this.chkCafetera.Size = new System.Drawing.Size(62, 16);
-            this.chkCafetera.TabIndex = 15;
-            this.chkCafetera.Text = "Cafétera";
-            this.chkCafetera.UseVisualStyleBackColor = true;
-            // 
-            // chkOtro
-            // 
-            this.chkOtro.AutoSize = true;
-            this.chkOtro.Location = new System.Drawing.Point(161, 95);
-            this.chkOtro.Name = "chkOtro";
-            this.chkOtro.Size = new System.Drawing.Size(46, 16);
-            this.chkOtro.TabIndex = 16;
-            this.chkOtro.Text = "Otro";
-            this.chkOtro.UseVisualStyleBackColor = true;
-            // 
-            // chkDisponible
-            // 
-            this.chkDisponible.AutoSize = true;
-            this.chkDisponible.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkDisponible.Location = new System.Drawing.Point(314, 230);
-            this.chkDisponible.Name = "chkDisponible";
-            this.chkDisponible.Size = new System.Drawing.Size(215, 21);
-            this.chkDisponible.TabIndex = 11;
-            this.chkDisponible.Text = "Sala Disponible para Reservas ";
-            this.chkDisponible.UseVisualStyleBackColor = true;
-            // 
-            // txtOtroEquipo
-            // 
-            this.txtOtroEquipo.Location = new System.Drawing.Point(213, 91);
-            this.txtOtroEquipo.Name = "txtOtroEquipo";
-            this.txtOtroEquipo.Size = new System.Drawing.Size(100, 20);
-            this.txtOtroEquipo.TabIndex = 17;
-            // 
             // btnNuevaSala
             // 
             this.btnNuevaSala.Location = new System.Drawing.Point(46, 607);
@@ -361,11 +369,64 @@ namespace SistemaReservaSalas
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = true;
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.usuariosToolStripMenuItem,
+            this.salasToolStripMenuItem,
+            this.reportesToolStripMenuItem,
+            this.reportesToolStripMenuItem1,
+            this.ayudaToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(884, 24);
+            this.menuStrip1.TabIndex = 18;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // usuariosToolStripMenuItem
+            // 
+            this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
+            this.usuariosToolStripMenuItem.Text = "Usuarios";
+            // 
+            // salasToolStripMenuItem
+            // 
+            this.salasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1});
+            this.salasToolStripMenuItem.Name = "salasToolStripMenuItem";
+            this.salasToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
+            this.salasToolStripMenuItem.Text = "Salas";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem1.Text = "toolStripMenuItem1";
+            // 
+            // reportesToolStripMenuItem
+            // 
+            this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
+            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
+            this.reportesToolStripMenuItem.Text = "Reservas";
+            // 
+            // reportesToolStripMenuItem1
+            // 
+            this.reportesToolStripMenuItem1.Name = "reportesToolStripMenuItem1";
+            this.reportesToolStripMenuItem1.Size = new System.Drawing.Size(65, 20);
+            this.reportesToolStripMenuItem1.Text = "Reportes";
+            // 
+            // ayudaToolStripMenuItem
+            // 
+            this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.ayudaToolStripMenuItem.Text = "Ayuda";
+            // 
             // frmGestionSalas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 677);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnEliminarSala);
             this.Controls.Add(this.btnVerCalendario);
@@ -384,9 +445,11 @@ namespace SistemaReservaSalas
             ((System.ComponentModel.ISupportInitialize)(this.dgvSalas)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numCapacidad)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numCapacidad)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -425,5 +488,12 @@ namespace SistemaReservaSalas
         private System.Windows.Forms.Button btnVerCalendario;
         private System.Windows.Forms.Button btnEliminarSala;
         private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
     }
 }

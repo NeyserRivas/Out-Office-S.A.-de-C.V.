@@ -57,6 +57,7 @@ namespace SistemaReservaSalas
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.lblTotalAsistentes = new System.Windows.Forms.Label();
             this.dgvAsistentes = new System.Windows.Forms.DataGridView();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ComboSeleccionado = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -67,15 +68,21 @@ namespace SistemaReservaSalas
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.lblCombo3Detalle = new System.Windows.Forms.Label();
+            this.lblCombo2Detalle = new System.Windows.Forms.Label();
+            this.lblCombo1Detalle = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.lblTotalAsistentes = new System.Windows.Forms.Label();
-            this.lblCombo1Detalle = new System.Windows.Forms.Label();
-            this.lblCombo2Detalle = new System.Windows.Forms.Label();
-            this.lblCombo3Detalle = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numDuracion)).BeginInit();
@@ -83,6 +90,7 @@ namespace SistemaReservaSalas
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAsistentes)).BeginInit();
             this.groupBox5.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnGuardarReserva
@@ -360,6 +368,15 @@ namespace SistemaReservaSalas
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Seleccion de sala:";
             // 
+            // lblTotalAsistentes
+            // 
+            this.lblTotalAsistentes.AutoSize = true;
+            this.lblTotalAsistentes.Location = new System.Drawing.Point(330, 100);
+            this.lblTotalAsistentes.Name = "lblTotalAsistentes";
+            this.lblTotalAsistentes.Size = new System.Drawing.Size(80, 12);
+            this.lblTotalAsistentes.TabIndex = 21;
+            this.lblTotalAsistentes.Text = "Total Asistentes";
+            // 
             // dgvAsistentes
             // 
             this.dgvAsistentes.AllowUserToOrderColumns = true;
@@ -452,6 +469,33 @@ namespace SistemaReservaSalas
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Seleccion de sala:";
             // 
+            // lblCombo3Detalle
+            // 
+            this.lblCombo3Detalle.AutoSize = true;
+            this.lblCombo3Detalle.Location = new System.Drawing.Point(23, 96);
+            this.lblCombo3Detalle.Name = "lblCombo3Detalle";
+            this.lblCombo3Detalle.Size = new System.Drawing.Size(49, 12);
+            this.lblCombo3Detalle.TabIndex = 22;
+            this.lblCombo3Detalle.Text = "Combo 3:";
+            // 
+            // lblCombo2Detalle
+            // 
+            this.lblCombo2Detalle.AutoSize = true;
+            this.lblCombo2Detalle.Location = new System.Drawing.Point(23, 62);
+            this.lblCombo2Detalle.Name = "lblCombo2Detalle";
+            this.lblCombo2Detalle.Size = new System.Drawing.Size(49, 12);
+            this.lblCombo2Detalle.TabIndex = 21;
+            this.lblCombo2Detalle.Text = "Combo 2:";
+            // 
+            // lblCombo1Detalle
+            // 
+            this.lblCombo1Detalle.AutoSize = true;
+            this.lblCombo1Detalle.Location = new System.Drawing.Point(23, 37);
+            this.lblCombo1Detalle.Name = "lblCombo1Detalle";
+            this.lblCombo1Detalle.Size = new System.Drawing.Size(49, 12);
+            this.lblCombo1Detalle.TabIndex = 20;
+            this.lblCombo1Detalle.Text = "Combo 1:";
+            // 
             // label17
             // 
             this.label17.AutoSize = true;
@@ -498,47 +542,64 @@ namespace SistemaReservaSalas
             this.label14.TabIndex = 6;
             this.label14.Text = "Combo Seleccionado:";
             // 
-            // lblTotalAsistentes
+            // menuStrip1
             // 
-            this.lblTotalAsistentes.AutoSize = true;
-            this.lblTotalAsistentes.Location = new System.Drawing.Point(330, 100);
-            this.lblTotalAsistentes.Name = "lblTotalAsistentes";
-            this.lblTotalAsistentes.Size = new System.Drawing.Size(80, 12);
-            this.lblTotalAsistentes.TabIndex = 21;
-            this.lblTotalAsistentes.Text = "Total Asistentes";
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.usuariosToolStripMenuItem,
+            this.salasToolStripMenuItem,
+            this.reportesToolStripMenuItem,
+            this.reportesToolStripMenuItem1,
+            this.ayudaToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(622, 24);
+            this.menuStrip1.TabIndex = 21;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // lblCombo1Detalle
+            // usuariosToolStripMenuItem
             // 
-            this.lblCombo1Detalle.AutoSize = true;
-            this.lblCombo1Detalle.Location = new System.Drawing.Point(23, 37);
-            this.lblCombo1Detalle.Name = "lblCombo1Detalle";
-            this.lblCombo1Detalle.Size = new System.Drawing.Size(49, 12);
-            this.lblCombo1Detalle.TabIndex = 20;
-            this.lblCombo1Detalle.Text = "Combo 1:";
+            this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
+            this.usuariosToolStripMenuItem.Text = "Usuarios";
             // 
-            // lblCombo2Detalle
+            // salasToolStripMenuItem
             // 
-            this.lblCombo2Detalle.AutoSize = true;
-            this.lblCombo2Detalle.Location = new System.Drawing.Point(23, 62);
-            this.lblCombo2Detalle.Name = "lblCombo2Detalle";
-            this.lblCombo2Detalle.Size = new System.Drawing.Size(49, 12);
-            this.lblCombo2Detalle.TabIndex = 21;
-            this.lblCombo2Detalle.Text = "Combo 2:";
+            this.salasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1});
+            this.salasToolStripMenuItem.Name = "salasToolStripMenuItem";
+            this.salasToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
+            this.salasToolStripMenuItem.Text = "Salas";
             // 
-            // lblCombo3Detalle
+            // toolStripMenuItem1
             // 
-            this.lblCombo3Detalle.AutoSize = true;
-            this.lblCombo3Detalle.Location = new System.Drawing.Point(23, 96);
-            this.lblCombo3Detalle.Name = "lblCombo3Detalle";
-            this.lblCombo3Detalle.Size = new System.Drawing.Size(49, 12);
-            this.lblCombo3Detalle.TabIndex = 22;
-            this.lblCombo3Detalle.Text = "Combo 3:";
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem1.Text = "toolStripMenuItem1";
+            // 
+            // reportesToolStripMenuItem
+            // 
+            this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
+            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
+            this.reportesToolStripMenuItem.Text = "Reservas";
+            // 
+            // reportesToolStripMenuItem1
+            // 
+            this.reportesToolStripMenuItem1.Name = "reportesToolStripMenuItem1";
+            this.reportesToolStripMenuItem1.Size = new System.Drawing.Size(65, 20);
+            this.reportesToolStripMenuItem1.Text = "Reportes";
+            // 
+            // ayudaToolStripMenuItem
+            // 
+            this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.ayudaToolStripMenuItem.Text = "Ayuda";
             // 
             // frmNuevaReserva
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(622, 749);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -564,7 +625,10 @@ namespace SistemaReservaSalas
             ((System.ComponentModel.ISupportInitialize)(this.dgvAsistentes)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -616,5 +680,12 @@ namespace SistemaReservaSalas
         private System.Windows.Forms.Label lblCombo3Detalle;
         private System.Windows.Forms.Label lblCombo2Detalle;
         private System.Windows.Forms.Label lblCombo1Detalle;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
     }
 }
