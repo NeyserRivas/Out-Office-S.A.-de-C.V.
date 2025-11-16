@@ -67,9 +67,9 @@ namespace SistemaReservaSalas
             // 
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label1.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(1, 2);
+            this.label1.Location = new System.Drawing.Point(-3, -1);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(982, 51);
+            this.label1.Size = new System.Drawing.Size(990, 51);
             this.label1.TabIndex = 0;
             this.label1.Text = "Reportes";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

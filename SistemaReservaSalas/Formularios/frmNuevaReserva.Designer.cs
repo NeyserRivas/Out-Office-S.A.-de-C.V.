@@ -34,16 +34,16 @@ namespace SistemaReservaSalas
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.button4 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
+            this.btnVerDetallesSala = new System.Windows.Forms.Button();
+            this.cmbSala = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblCapacidadSala = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.numDuracion = new System.Windows.Forms.NumericUpDown();
             this.button5 = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblHoraFin = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -71,9 +71,10 @@ namespace SistemaReservaSalas
             this.label15 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.dtpHoraInicio = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numDuracion)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -110,35 +111,36 @@ namespace SistemaReservaSalas
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(11, 52);
+            this.label5.Location = new System.Drawing.Point(6, 33);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(37, 12);
             this.label5.TabIndex = 4;
             this.label5.Text = "Fecha: ";
             // 
-            // dateTimePicker1
+            // dtpFecha
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(60, 45);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(83, 20);
-            this.dateTimePicker1.TabIndex = 8;
+            this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFecha.Location = new System.Drawing.Point(64, 26);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(99, 20);
+            this.dtpFecha.TabIndex = 8;
             // 
-            // button4
+            // btnVerDetallesSala
             // 
-            this.button4.Location = new System.Drawing.Point(224, 23);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(84, 28);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Ver detalle";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnVerDetallesSala.Location = new System.Drawing.Point(224, 23);
+            this.btnVerDetallesSala.Name = "btnVerDetallesSala";
+            this.btnVerDetallesSala.Size = new System.Drawing.Size(84, 28);
+            this.btnVerDetallesSala.TabIndex = 3;
+            this.btnVerDetallesSala.Text = "Ver detalle";
+            this.btnVerDetallesSala.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // cmbSala
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(67, 29);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 20);
-            this.comboBox1.TabIndex = 5;
+            this.cmbSala.FormattingEnabled = true;
+            this.cmbSala.Location = new System.Drawing.Point(67, 29);
+            this.cmbSala.Name = "cmbSala";
+            this.cmbSala.Size = new System.Drawing.Size(121, 20);
+            this.cmbSala.TabIndex = 5;
             // 
             // label2
             // 
@@ -149,21 +151,21 @@ namespace SistemaReservaSalas
             this.label2.TabIndex = 4;
             this.label2.Text = "Sala:";
             // 
-            // label3
+            // lblCapacidadSala
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(330, 29);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 12);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Capacidad";
+            this.lblCapacidadSala.AutoSize = true;
+            this.lblCapacidadSala.Location = new System.Drawing.Point(355, 29);
+            this.lblCapacidadSala.Name = "lblCapacidadSala";
+            this.lblCapacidadSala.Size = new System.Drawing.Size(52, 12);
+            this.lblCapacidadSala.TabIndex = 6;
+            this.lblCapacidadSala.Text = "Capacidad";
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.lblCapacidadSala);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.button4);
+            this.groupBox1.Controls.Add(this.cmbSala);
+            this.groupBox1.Controls.Add(this.btnVerDetallesSala);
             this.groupBox1.Location = new System.Drawing.Point(52, 22);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(487, 73);
@@ -174,12 +176,13 @@ namespace SistemaReservaSalas
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.numericUpDown1);
+            this.groupBox2.Controls.Add(this.dtpHoraInicio);
+            this.groupBox2.Controls.Add(this.numDuracion);
             this.groupBox2.Controls.Add(this.button5);
-            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.lblHoraFin);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.dateTimePicker1);
+            this.groupBox2.Controls.Add(this.dtpFecha);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Location = new System.Drawing.Point(52, 101);
             this.groupBox2.Name = "groupBox2";
@@ -188,44 +191,58 @@ namespace SistemaReservaSalas
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Fecha y Hora de Reserva:";
             // 
-            // numericUpDown1
+            // numDuracion
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(249, 76);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(49, 20);
-            this.numericUpDown1.TabIndex = 12;
+            this.numDuracion.Location = new System.Drawing.Point(268, 42);
+            this.numDuracion.Maximum = new decimal(new int[] {
+            24,
+            0,
+            0,
+            0});
+            this.numDuracion.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numDuracion.Name = "numDuracion";
+            this.numDuracion.Size = new System.Drawing.Size(49, 20);
+            this.numDuracion.TabIndex = 12;
+            this.numDuracion.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(333, 18);
+            this.button5.Location = new System.Drawing.Point(332, 19);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(127, 28);
+            this.button5.Size = new System.Drawing.Size(146, 28);
             this.button5.TabIndex = 7;
             this.button5.Text = "Verificar Disponivilidad:";
             this.button5.UseVisualStyleBackColor = true;
             // 
-            // label7
+            // lblHoraFin
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(312, 78);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(49, 12);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "Hora Fin:";
+            this.lblHoraFin.AutoSize = true;
+            this.lblHoraFin.Location = new System.Drawing.Point(330, 69);
+            this.lblHoraFin.Name = "lblHoraFin";
+            this.lblHoraFin.Size = new System.Drawing.Size(49, 12);
+            this.lblHoraFin.TabIndex = 11;
+            this.lblHoraFin.Text = "Hora Fin:";
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(11, 78);
+            this.label6.Location = new System.Drawing.Point(6, 65);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(74, 12);
+            this.label6.Size = new System.Drawing.Size(61, 31);
             this.label6.TabIndex = 10;
             this.label6.Text = "Hora de Inicio:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(167, 78);
+            this.label4.Location = new System.Drawing.Point(186, 50);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(77, 12);
             this.label4.TabIndex = 9;
@@ -466,6 +483,14 @@ namespace SistemaReservaSalas
             this.label14.TabIndex = 6;
             this.label14.Text = "Combo Seleccionado:";
             // 
+            // dtpHoraInicio
+            // 
+            this.dtpHoraInicio.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtpHoraInicio.Location = new System.Drawing.Point(73, 63);
+            this.dtpHoraInicio.Name = "dtpHoraInicio";
+            this.dtpHoraInicio.Size = new System.Drawing.Size(90, 20);
+            this.dtpHoraInicio.TabIndex = 13;
+            // 
             // frmNuevaReserva
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -488,7 +513,7 @@ namespace SistemaReservaSalas
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numDuracion)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
@@ -506,17 +531,17 @@ namespace SistemaReservaSalas
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.DateTimePicker dtpFecha;
+        private System.Windows.Forms.Button btnVerDetallesSala;
+        private System.Windows.Forms.ComboBox cmbSala;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblCapacidadSala;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown numDuracion;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblHoraFin;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TextBox textBox3;
@@ -543,5 +568,6 @@ namespace SistemaReservaSalas
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn ComboSeleccionado;
+        private System.Windows.Forms.DateTimePicker dtpHoraInicio;
     }
 }
